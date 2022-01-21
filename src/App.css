@@ -1,20 +1,21 @@
 .App {
   text-align: center;
+  background-color: lightskyblue;
 }
 
 .Character {
-  width: 200px;
+  width: 150px;
   height: 500px;
-  border: 2px solid blue;
+  border: 2px solid darkblue;
   border-radius: 5px;
+  padding: 10px;
 }
 
-.Image {
-  width: 180px;
+.Image img {
+  width: 150px;
   height: 300px;
   background-size: cover;
   background-position: center;
-  border: 2px solid red;
 }
 
 /* FLEX */

@@ -3,8 +3,8 @@ import React from 'react';
 const Character = (props) => {
   return (
     <div className="Character d-flex column">
-      <div className="">
-        <img className="Image" src={props.image} alt="image" /> 
+      <div className="Image">
+        <img src={props.image} alt="image" /> 
       </div>  
       <div className="Info d-flex column txt-left">
         <div>race : {props.race}</div>

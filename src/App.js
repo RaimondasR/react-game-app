@@ -100,7 +100,7 @@ function App() {
       <h4>react-game-app | task #D80T1</h4>
       <h3>START Page</h3>
       <h4>to start the game please choose a Character and click on it...</h4>
-      <div className ="d-flex row">
+      <div className ="d-flex row evenly">
         <Character 
           image={characters[0].image}
           race={characters[0].race}
