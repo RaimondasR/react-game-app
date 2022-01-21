@@ -1,6 +1,6 @@
 import './App.css';
 import React, { useState } from 'react';
-import Character from './components/Character';
+import CharactersList from './components/CharactersList';
 import StartPage from './Pages/StartPage';
 import MainPage from "./Pages/MainPage";
 
@@ -108,97 +108,8 @@ function App() {
         </div>
       </div> 
       <h3>START Page</h3>
-      <h4>to start the game please choose a Character and click on it ...</h4>
-      <div className ="d-flex row evenly f-wrap">
-        <Character 
-          image={characters[0].image}
-          race={characters[0].race}
-          damage={characters[0].damage}
-          health={characters[0].health}
-          energy={characters[0].energy}
-          stamina={characters[0].stamina}
-          strength={characters[0].strength}
-          inventorySlots={characters[0].inventorySlots}
-          gold={characters[0].gold} 
-        />
-        <Character 
-          image={characters[1].image}
-          race={characters[1].race}
-          damage={characters[1].damage}
-          health={characters[1].health}
-          energy={characters[1].energy}
-          stamina={characters[1].stamina}
-          strength={characters[1].strength}
-          inventorySlots={characters[1].inventorySlots}
-          gold={characters[1].gold} 
-        />
-        <Character 
-          image={characters[2].image}
-          race={characters[2].race}
-          damage={characters[2].damage}
-          health={characters[2].health}
-          energy={characters[2].energy}
-          stamina={characters[2].stamina}
-          strength={characters[2].strength}
-          inventorySlots={characters[2].inventorySlots}
-          gold={characters[2].gold} 
-        />
-        <Character 
-          image={characters[3].image}
-          race={characters[3].race}
-          damage={characters[3].damage}
-          health={characters[3].health}
-          energy={characters[3].energy}
-          stamina={characters[3].stamina}
-          strength={characters[3].strength}
-          inventorySlots={characters[3].inventorySlots}
-          gold={characters[3].gold} 
-        />
-        <Character 
-          image={characters[4].image}
-          race={characters[4].race}
-          damage={characters[4].damage}
-          health={characters[4].health}
-          energy={characters[4].energy}
-          stamina={characters[4].stamina}
-          strength={characters[4].strength}
-          inventorySlots={characters[4].inventorySlots}
-          gold={characters[4].gold} 
-        />
-        <Character 
-          image={characters[5].image}
-          race={characters[5].race}
-          damage={characters[5].damage}
-          health={characters[5].health}
-          energy={characters[5].energy}
-          stamina={characters[5].stamina}
-          strength={characters[5].strength}
-          inventorySlots={characters[5].inventorySlots}
-          gold={characters[5].gold} 
-        />
-        <Character 
-          image={characters[6].image}
-          race={characters[6].race}
-          damage={characters[6].damage}
-          health={characters[6].health}
-          energy={characters[6].energy}
-          stamina={characters[6].stamina}
-          strength={characters[6].strength}
-          inventorySlots={characters[6].inventorySlots}
-          gold={characters[6].gold} 
-        />
-        <Character 
-          image={characters[7].image}
-          race={characters[7].race}
-          damage={characters[7].damage}
-          health={characters[7].health}
-          energy={characters[7].energy}
-          stamina={characters[7].stamina}
-          strength={characters[7].strength}
-          inventorySlots={characters[7].inventorySlots}
-          gold={characters[7].gold} 
-        />
-      </div>    
+      <h4>to start the game please choose a Character and click on it ...</h4>      
+      <CharactersList characters={characters} />  
     </div>
   );
 }
