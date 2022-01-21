@@ -11,6 +11,11 @@
   padding: 10px;
 }
 
+.Character:hover {
+  transform: scale(1.1);
+  background-color: lightcyan;
+}
+
 .Image img {
   width: 150px;
   height: 300px;
@@ -27,6 +32,7 @@
 .a-center {align-items: center;}
 .a-flex-start {align-items: flex-start;}
 .evenly {justify-content: space-evenly;}
+.space-arnd { justify-content: space-around;}
 .space-btw { justify-content: space-between;}
 .left {justify-content:left;}
 .right {justify-content:right;}
