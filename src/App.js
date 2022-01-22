@@ -1,8 +1,8 @@
 import './App.css';
 import React, { useState } from 'react';
-import CharactersList from './components/CharactersList';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import StartPage from './Pages/StartPage';
-import MainPage from "./Pages/MainPage";
+// import MainPage from "./Pages/MainPage";
 
 function App() {
   const [characters, setCharacters] = useState([
@@ -96,20 +96,28 @@ function App() {
       gold: 400
     }
   ]);
+  
 
   return (
     <div className="App d-flex column">
-      <div className="d-flex row space-arnd">
-        <div>          
-            <h2>react-game-app</h2>
-        </div>
-        <div>    
-            <h5>"Code Academy" TypeScript course | React.js Assignment | Final project | Task #D80T1</h5>
-        </div>
-      </div> 
-      <h3>START Page</h3>
-      <h4>to start the game please choose a Character and click on it ...</h4>      
-      <CharactersList characters={characters} />  
+            
+      <BrowserRouter> 
+        <div className="d-flex row space-arnd">
+          <div>          
+              <h2>react-game-app</h2>
+          </div>
+          <div>    
+              <h5>"Code Academy" TypeScript course | React.js Assignment | Final project | Task #D80T1</h5>
+          </div>
+        </div> 
+        <h3>START Page</h3>
+        <h4>to start the game please choose a Character and click on it ...</h4>
+        
+        <Routes>
+          <Route path="/start" element={<StartPage />} />
+        </Routes> 
+      </BrowserRouter>  
+
     </div>
   );
 }
