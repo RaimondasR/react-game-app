@@ -2,8 +2,8 @@ import React, {useEffect} from 'react';
 
 const MainPage = () => {
   return (
-    <div>
-
+    <div className="MainPage d-flex column">
+      MAIN Page
     </div>
   );
 };

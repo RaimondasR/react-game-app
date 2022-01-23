@@ -2,18 +2,23 @@ import './App.css';
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import StartPage from './Pages/StartPage';
-import CharactersList from './components/CharactersList';
+import MainPage from './Pages/MainPage';
+import ShopPage from './Pages/ShopPage';
+import ArenaPage from './Pages/ArenaPage';
 
 function App() {  
   
   return (
-    <div className="App d-flex column">                  
-      <div>          
-        <h2>react-game-app</h2>
-      </div>                
+    <div className="App">                                 
+                         
       <BrowserRouter>   
       <Routes>
-        <Route path="/" element={<StartPage />} />
+        <Route path='/'       element={<StartPage />} />
+        <Route path='/start'  element={<StartPage />} />
+        <Route path='/main'   element={<MainPage />} />
+        <Route path='/shop'   element={<ShopPage />} />
+        <Route path='/arena'  element={<ArenaPage />} />
+        
       </Routes> 
       </BrowserRouter>  
 

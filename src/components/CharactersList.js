@@ -1,6 +1,7 @@
 import React from 'react';
 import {useSelector, useDispatch} from 'react-redux';
 import {setCharacters} from '../features/characters'
+import MainPage from '../Pages/MainPage';
 
 const CharactersList = () => {
 
@@ -9,7 +10,9 @@ const CharactersList = () => {
   return (
     <div className ="d-flex row evenly f-wrap">      
       {state.map((x, i) => (        
-          <div className="Character d-flex column" key={i}>
+          <div className="Character d-flex column" 
+               key={i}
+               onClick={() => {<MainPage />}}>
             <div className="Image">
               <img src={x.image} alt=''/> 
             </div>  
