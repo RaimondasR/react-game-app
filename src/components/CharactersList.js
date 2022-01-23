@@ -1,18 +1,15 @@
 import React from 'react';
-import {useEffect, useState} from "react";
-import {useSelector, useDispatch} from "react-redux";
+import {useSelector, useDispatch} from 'react-redux';
+import {setCharacters} from '../features/characters'
 
 const CharactersList = () => {
-  const dispatch = useDispatch();
 
-  const chars = useSelector((state) => state.characters.value)
-
+  const state = useSelector((state) => state.characters.value);
+ 
   return (
-    <div className ="d-flex row evenly f-wrap">
-
-      {chars.map((x, i) => (
-        <div>
-          <div className="Character d-flex column">
+    <div className ="d-flex row evenly f-wrap">      
+      {state.map((x, i) => (        
+          <div className="Character d-flex column" key={i}>
             <div className="Image">
               <img src={x.image} alt=''/> 
             </div>  
@@ -27,9 +24,8 @@ const CharactersList = () => {
               <div>gold : {x.gold}</div>
             </div>                            
           </div>
-        </div>
-      ))};
-      
+        
+      ))};      
     </div>
   );
 };

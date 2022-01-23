@@ -1,16 +1,15 @@
-import React, { useEffect} from 'react';
+import React from 'react';
 import CharactersList from '../components/CharactersList';
-import {useDispatch} from "react-redux";
-import {setCharacters} from '../features/characters';
 
 const StartPage = () => {
-  const dispatch =useDispatch();
-
   
-
   return (
     <div>
-      <CharactersList />
+      <div className="d-flex column center"> 
+        <h3>START Page</h3>
+        <h4>to start the game please choose a Character and click on it ...</h4>
+      </div>      
+      <CharactersList />       
     </div>
   );
 };
