@@ -1,5 +1,6 @@
 import React from 'react';
 import CharactersList from '../components/CharactersList';
+import MonstersList from '../components/MonstersList';
 
 
 const StartPage = () => {
@@ -9,7 +10,8 @@ const StartPage = () => {
         <h3>react-game-app</h3>           
         <h3>START Page</h3>
         <h4>To start the game please choose a Character and click it ...</h4>
-        <CharactersList />      
+        <CharactersList /> 
+        <MonstersList />     
       </div>                  
     
   );
