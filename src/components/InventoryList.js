@@ -1,22 +1,21 @@
 import React from 'react';
-import {useSelector} from 'react-redux';
+import { useSelector } from 'react-redux';
 
-const MonstersList = () => {
+const InventoryList = () => {
+  const state = useSelector((state) => state.inventory.value);
 
-  const state = useSelector((state) => state.monsters.value);
- 
+
   return (
     <div className ="d-flex row evenly f-wrap">      
       {state.map((x, i) => (        
-          <div className="Monster d-flex column" key={i}>
+          <div className="Inventory d-flex column" key={i}>
             <div className="Image">
               <img src={x.image} alt=''/> 
             </div>  
             <div className="Info d-flex column txt-left">
-              <div>name : {x.name}</div>
               <div>maxDamage : {x.maxDamage}</div> 
-              <div>health : {x.health}</div> 
-              <div>maxItemsDrop : {x.maxItemsDrop}</div>              
+              <div>price : {x.price}</div> 
+              <div>energyPerHit : {x.energyPerHit}</div>              
             </div>                            
           </div>
         
@@ -25,4 +24,4 @@ const MonstersList = () => {
   );
 };
 
-export default MonstersList;
+export default InventoryList;

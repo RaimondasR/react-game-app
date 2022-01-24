@@ -1,7 +1,7 @@
 import React from 'react';
 import CharactersList from '../components/CharactersList';
 import MonstersList from '../components/MonstersList';
-
+import InventoryList from '../components/InventoryList';
 
 const StartPage = () => {
   
@@ -11,7 +11,8 @@ const StartPage = () => {
         <h3>START Page</h3>
         <h4>To start the game please choose a Character and click it ...</h4>
         <CharactersList /> 
-        <MonstersList />     
+        <MonstersList />
+        <InventoryList />     
       </div>                  
     
   );
