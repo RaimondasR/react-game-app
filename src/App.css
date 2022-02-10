@@ -8,8 +8,9 @@
 }
 
 .Character {
-  width: 150px;
-  height: 500px;
+  overflow: hidden;
+  width: 130px;
+  height: 295px;
   border: 2px solid darkblue;
   border-radius: 5px;
   padding: 10px;
@@ -18,14 +19,37 @@
 .Character:hover {
   transform: scale(1.1);
   background-color: lightcyan;
+  cursor: pointer;
 }
 
 .Image img {
-  width: 150px;
-  height: 300px;
+  width: 130px;
+  height: 165px;
   background-size: cover;
   background-position: center;
+  border: 2px solid blue;
 }
+
+.Monster {
+  opacity: 1;
+}
+
+.Toolbar {
+  background-color: blue;
+  color: white;
+}
+
+.Toolbar div {
+  margin: 0 40px;
+}
+
+.Toolbar h3 {
+  margin: 10px;
+}
+
+.One {  border: 2px solid red; }
+
+.Two {  border: 2px solid red; }
 
 /* FLEX */
 .d-flex {display: flex;}
@@ -35,7 +59,7 @@
 .center {justify-content: center;}
 .a-center {align-items: center;}
 .a-flex-start {align-items: flex-start;}
-.evenly {justify-content: space-evenly;}
+.space-evn {justify-content: space-evenly;}
 .space-arnd { justify-content: space-around;}
 .space-btw { justify-content: space-between;}
 .left {justify-content:left;}
@@ -44,3 +68,46 @@
 .txt-center {text-align: center;}
 .txt-right {text-align: right;}
 .txt-left {text-align: left;}
+.grow0 {    flex:0;}
+.grow1 {    flex:1;}
+.grow2 {    flex:2;}
+.grow3 {    flex:3;}
+.grow4 {    flex:4;}
+.grow5 {    flex:5;}
+.grow6 {    flex:6;}
+.grow8 {    flex:8;}
+
+/* PADDINGS, MARGINS */
+.p5 {padding: 5px;}
+.p10 {padding: 10px;}
+.p20 {padding: 20px;}
+.p30 {  padding: 30px;}
+.p50 {padding: 50px;}
+.m0 {margin: 0;}
+.ml0 {margin-left: 0;}
+.ml15 { margin-left: 15px;}
+.ml20 { margin-left: 20px;}
+.m10 {margin: 10px;}
+.m20 {margin: 20px;}
+.m30 {margin: 30px;}
+.mb3 {  margin-bottom: 3px;}
+.mb5 {margin-bottom: 10px;}
+.mb15 {margin-bottom: 15px;}
+.mb10 {margin-bottom: 10px;}
+.mb20 {margin-bottom: 20px;}
+.mb50 {margin-bottom: 50px;}
+.mr0 {margin-right: 0;}
+.mr5 {margin-right: 10px;}
+.mr10 {margin-right: 10px;}
+.mr15 {margin-right: 15px;}
+.mr20 {margin-right: 20px;}
+.mr30 {margin-right: 30px;}
+.mr50 {margin-right: 50px;}
+.mt10 {margin-top: 10px;}
+.mt20 {margin-top: 20px;}
+.pl20 {padding-left: 20px;}
+.pt20 {padding-top: 20px;}
+.plr50 {padding: 0px 50px;}
+.fs12 {   font-size: 12px;}
+.fs14 {   font-size: 14px;}
+.fs16 {   font-size: 16px;}

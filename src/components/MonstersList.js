@@ -6,7 +6,7 @@ const MonstersList = () => {
   const state = useSelector((state) => state.monsters.value);
  
   return (
-    <div className ="d-flex row evenly f-wrap">      
+    <div className ="d-flex row center f-wrap">      
       {state.map((x, i) => (        
           <div className="Monster d-flex column" key={i}>
             <div className="Image">
