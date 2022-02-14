@@ -5,7 +5,7 @@ import StartPage from './Pages/StartPage';
 import MainPage from './Pages/MainPage';
 import ShopPage from './Pages/ShopPage';
 import ArenaPage from './Pages/ArenaPage';
-import Toolbar from 'components/Toolbar';
+import Toolbar from './components/Toolbar';
 import { useSelector } from 'react-redux';
 
 function App() {

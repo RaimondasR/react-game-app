@@ -1,26 +1,19 @@
 import React, {useEffect} from 'react';
-import PlayerProfile from "../components/PlayerProfile";
+import PlayerInfo from '../components/PlayerInfo';
+import PlayerInventory from '../components/PlayerInventory'
 
 const MainPage = () => {
   return (
-    <div className="MainPage d-flex column">
-      <div><h3>MAIN Page</h3></div>
-
-      <PlayerProfile><PlayerProfile />
-      {/*    */}
-      {/*<div className="Toolbar d-flex row left">*/}
-      {/*  <div><h3>Shop</h3></div>*/}
-      {/*  <div><h3>Arena</h3></div> */}
-      {/*</div>*/}
-      {/*<div className="d-flex row">*/}
-      {/*  <div className="One d-flex grow1">*/}
-      {/*    Character Info div*/}
-      {/*  </div>*/}
-      {/*  <div className="Two d-flex grow2">*/}
-      {/*    User Inventory div*/}
-      {/*  </div>*/}
-      {/*</div>*/}
-
+    <div className="MainPage d-flex column grow1">
+      <div><h3 className="m10">MAIN Page</h3></div>
+      <div className="d-flex row space-evn">
+        <div className="d-flex grow1 ml10 mr10">
+          <PlayerInfo />
+        </div>
+        <div className="d-flex grow2 mr10">
+          <PlayerInventory />
+        </div>
+      </div>
     </div>
   );
 };
