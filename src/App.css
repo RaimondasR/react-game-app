@@ -34,57 +34,84 @@
   opacity: 1;
 }
 
-.Toolbar {
-  background-color: blue;
+.toolbar {
+  padding: 5px;
+  background-color: darkblue;
   color: white;
 }
 
-.Toolbar div {
-  margin: 0 40px;
-}
-
-.Toolbar h3 {
-  margin: 10px;
+.toolbar a { 
+  color: white;
+  text-decoration: none;
 }
 
 .playerInfo {
-  border: 2px solid blue;
+  border: 2px solid darkblue;
   padding: 10px;
 }
 
 .playerInfo img {
   width: 200px;
-  height: 300px;
-  border: 2px solid blue;
+  height: 280px;
+  border: 2px solid darkblue;
 }
 
-.playerInfo > div > h3 {
-margin: 0;
-}
-
-.playerInfo > h4 {
-  margin: 0;
-  }
+.playerInfo h3, h4 {    margin: 0;}
 
 .playerInventory {
-  border: 2px solid blue;
+  border: 2px solid darkblue;
+  padding: 10px;
+}
+
+.playerInventory h3 {  
+  margin: 0;
+  text-align: left;
 }
 
 .slot4Weapon {
   height: 100px;
   width: 100px;
-  border: 1px solid blue;
+  margin: 5px 5px 5px 5px;
+  border: 1px solid darkblue;
 }
 
 .slot4Weapon img {
   height: 100%;
-  width: 100%;
+  width: 100%;  
 }
 
+.shop-div {  border: 2px solid darkblue;}
 
-.One {  border: 2px solid red; }
+/* .pl-inv-div {  border: 2px solid darkblue; } */
 
-.Two {  border: 2px solid red; }
+.btn {
+  padding: 5px;
+  height: 25px;  
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: white;
+  color: black;
+}
+
+.itemSlot { 
+  margin: 10px;
+  padding: 5px;
+  text-align: left;
+  border: 1px solid darkblue;
+  font-size: 14px;
+}
+
+.itemSlot img {
+  height: 100px;
+  width: 100px;
+  margin-right: 5px;
+}
+
 
 /* FLEX */
 .d-flex {display: flex;}
@@ -134,12 +161,13 @@ margin: 0;
 .mb20 {margin-bottom: 20px;}
 .mb50 {margin-bottom: 50px;}
 .mr0 {margin-right: 0;}
-.mr5 {margin-right: 10px;}
+.mr5 {  margin-right: 5px;}
 .mr10 {margin-right: 10px;}
 .mr15 {margin-right: 15px;}
 .mr20 {margin-right: 20px;}
 .mr30 {margin-right: 30px;}
-.mr50 {margin-right: 50px;}
+.mr50 { margin-right: 50px;}
+.mt5 {  margin-top: 5px;}
 .mt10 {margin-top: 10px;}
 .mt20 {margin-top: 20px;}
 .pl20 {padding-left: 20px;}

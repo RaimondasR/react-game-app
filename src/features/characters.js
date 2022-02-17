@@ -5,7 +5,8 @@ export const characterSlice = createSlice ({
     initialState: {
       value: {
         character: null,
-        weapon: null
+        weapon: null,
+        inventory: []  
       },
     },
     reducers: {
