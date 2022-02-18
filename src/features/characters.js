@@ -6,7 +6,7 @@ export const characterSlice = createSlice ({
       value: {
         character: null,
         weapon: null,
-        inventory: []  
+        inventory: []
       },
     },
     reducers: {

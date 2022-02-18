@@ -103,13 +103,21 @@
   padding: 5px;
   text-align: left;
   border: 1px solid darkblue;
-  font-size: 14px;
+  font-size: 18px;
+  cursor: pointer;
 }
+
+.itemSlot:hover { background-color: lightcyan;}
 
 .itemSlot img {
   height: 100px;
   width: 100px;
   margin-right: 5px;
+}
+
+.effectsWrapper {
+  max-width: 200px;
+  white-space: pre-line;
 }
 
 
@@ -151,6 +159,7 @@
 .ml10 { margin-left: 10px;}
 .ml15 { margin-left: 15px;}
 .ml20 { margin-left: 20px;}
+.ml50 { margin-left: 50px;}
 .m10 {margin: 10px;}
 .m20 {margin: 20px;}
 .m30 {margin: 30px;}
