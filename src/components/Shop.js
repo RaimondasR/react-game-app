@@ -1,5 +1,7 @@
 import React from 'react'
 import { useState} from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { addToInventory, updateMoney } from '../features/characters';
 
 const effects = {
     s1: {
@@ -839,7 +841,21 @@ const trader = {
 }
 
 const Shop = () => {
+  const dispatch = useDispatch();  
+  const char = useSelector((state) => state.character.value.character);  
+  const inventory = useSelector((state) => state.character.value.inventory);  
   const [getWord, setWord] = useState("weapons");
+
+  function buyItem(item) {
+    if(char.gold >= item.price) {
+        if(inventory.length < char.inventorySlots) {
+            dispatch(updateMoney({add: false, gold: item.price}));
+            dispatch(addToInventory(item));
+        }
+        
+    }
+    console.log(item);
+  }
 
   function getEffects(effectsArr) {
     let result = "";
@@ -850,7 +866,7 @@ const Shop = () => {
   }
 
   const weapons = trader.weapons.map((x, i) => 
-    <div key={i} className="itemSlot d-flex row a-center">
+    <div key={i} className="itemSlot d-flex row a-center" onClick={() => buyItem(x)}>
       <div className="ml50">
         <img src={x.image} alt="" />
       </div>
@@ -864,6 +880,16 @@ const Shop = () => {
       </div>
     </div>)
 
+  const potions = trader.potions.map((x, i) => 
+    <div key={i} className="itemSlot d-flex row a-center" onClick={() => buyItem(x)}>
+      <div className="ml50">
+        <img src={x.image} alt="" />
+      </div>
+      <div className="ml50">
+        <div>Effect: {x.title}</div>
+        <div>Price: {x.price}</div>               
+      </div>
+    </div>)
 
   return (
     <div className="d-flex column grow1">
@@ -873,7 +899,8 @@ const Shop = () => {
       </div>
         
       <div className="d-flex column center f-wrap">
-        { weapons }
+        { getWord === 'weapons' ? weapons : potions }
+      
       </div>   
     </div>
   )

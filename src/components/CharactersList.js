@@ -58,7 +58,7 @@ const characters = [
     stamina: 7,
     strength: 1,
     inventorySlots: 4,
-    gold: 1000
+    gold: 10000
   },
   {
     image: "https://www.pngarts.com/files/4/Terminator-Transparent-Background-PNG.png",
@@ -69,7 +69,7 @@ const characters = [
     stamina: 3,
     strength: 1,
     inventorySlots: 3,
-    gold: 1000
+    gold: 20000
   },
   {
     image: "https://www.pngarts.com/files/4/Captain-Marvel-PNG-Photo.png",
@@ -183,7 +183,7 @@ const CharactersList = () => {
               <img src={x.image} alt=''/> 
             </div>  
             <div className="Info d-flex column txt-left fs12">
-              <div>race : {x.race}</div>
+              <div><h4>race : {x.race}</h4></div>
               <div>damage : {x.damage}</div> 
               <div>health : {x.health}</div> 
               <div>energy : {x.energy}</div>

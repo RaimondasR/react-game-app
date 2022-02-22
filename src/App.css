@@ -27,11 +27,6 @@
   height: 165px;
   background-size: cover;
   background-position: center;
-  border: 2px solid blue;
-}
-
-.Monster {
-  opacity: 1;
 }
 
 .toolbar {
@@ -99,6 +94,7 @@
 }
 
 .itemSlot { 
+  min-height: 100px;
   margin: 10px;
   padding: 5px;
   text-align: left;
@@ -118,6 +114,12 @@
 .effectsWrapper {
   max-width: 200px;
   white-space: pre-line;
+}
+
+.arenaCard {
+  padding: 10px;
+  border: 1px solid darkblue;
+  margin: 50px;
 }
 
 

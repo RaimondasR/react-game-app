@@ -1,9 +1,16 @@
+
 import React from 'react';
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
+import { disarmWeapon } from '../features/characters';
 
 const PlayerInfo = () => {
+  const dispatch =useDispatch();
   const char = useSelector((state) => state.character.value.character);
   const weapon = useSelector((state) => state.character.value.weapon);
+
+  function disarm() {
+    if (weapon) dispatch(disarmWeapon());        
+  }
 
   return (
     <div className="playerInfo d-flex grow1 column txt-left">
@@ -20,7 +27,7 @@ const PlayerInfo = () => {
       <div>inventory slots : {char.inventorySlots}</div>
       <div className="mb5">gold : {char.gold}</div>
       <h4>Slot for Weapon</h4>
-      <div className="slot4Weapon">
+      <div className="slot4Weapon" onClick={disarm}>
         {weapon && <img src={weapon.image} alt=""/>}
       </div>  
     </div>
