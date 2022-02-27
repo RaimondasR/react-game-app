@@ -1,10 +1,22 @@
 import React from 'react';
+import StatsInArena from './StatsInArena';
 
-function ArenaCard() {
+const ArenaCard = ({player, item}) => {  
+
   return (
     <div className="arenaCard">
-      <img src="https://images.blz-contentstack.com/v3/assets/blt3452e3b114fab0cd/blt5440cbe6b11972e4/6165e787c7341a058edee6c1/ZGHFCTYH33H41613677288710.png" alt=""/>
-    
+      <div clasName="d-flex">
+         <img src={item.image} alt="" />
+      </div>        
+      <div className="wrapper d-flex">
+        <div className="progressHealth" />    
+      </div>
+      { player &&
+        <div className="wrapper d-flex">
+          <div className="progressEnergy" />    
+        </div>
+       }
+       <StatsInArena />
     </div>
   )
 }
