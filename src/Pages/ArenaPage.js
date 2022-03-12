@@ -1,6 +1,8 @@
 import React from 'react';
 import { useState } from 'react';
 import ArenaCard from '../components/ArenaCard';
+import DropItems from '../components/DropItems';
+import PlayerInventory from '../components/PlayerInventory';
 import { useSelector } from 'react-redux';
 
 const dropItems = [
@@ -597,17 +599,118 @@ const monsters = [
 
 const ArenaPage = () => {
   const [getMonsters, setMonsters] = useState(15);
+  const [getGameState, setGameState] = useState(0);
+//   const playerHP = useSelector((state)=> state.character.value.health);
+  const [getPlayerHealth, setPlayerHealth] = useState(1000); // change to take character original health value // weapon = useSelector((state) => state.character.value.weapon);  
+  const [getMonsterHealth, setMonsterHealth] = useState(50);
+  const [getPlayerEnergy, setPlayerEnergy] = useState(100);
+  const [getDisabled, setDisabled] = useState(false);
+  const [getDrop, setDrop] = useState([]);
+
   const char = useSelector((state) => state.character.value.character);
+  const weapon = useSelector((state) => state.character.value.weapon);
+
+  function findEnemy() {
+    setGameState(1);
+    const randomMonsterIndex = Math.floor(Math.random()*monsters.length);
+    setMonsters(randomMonsterIndex);
+  }
+
+  function removeDropItem(index) {
+    setDrop(getDrop.filter((x, i) => i !== index));    
+  }
+
+  function attack() {
+    if(getDisabled) return;
+    const random = (num) => Math.round(Math.random()*num);
+    const getPercent = (defaultValue, currentDamage) => {
+        const onePercent = defaultValue / 100;
+        return (currentDamage / onePercent).toFixed(0);  
+      }
+
+    // if player has more energy than weapon's energy per hit, then player attacks
+    if(getPlayerEnergy >= weapon.energyPerHit) {
+        setDisabled(true);
+                
+        // PLAYER DOES DAMAGE : playerDamage - damage done by player to monster
+        const playerDamage = random(weapon.maxDamage) + char.damage;
+        // we send parameters how many health has a monster and damage done by player
+        const playerDamageInPercent = getPercent(monsters[getMonsters].health, playerDamage);
+    
+        if(char.strength >= random(100)) {
+            // critical hit
+            console.log("CRITICAL", playerDamageInPercent*3)
+            setMonsterHealth(getMonsterHealth - playerDamageInPercent*3);    
+        } else {
+            setMonsterHealth(getMonsterHealth - playerDamageInPercent);
+        }
+        
+        // SUBTRACT ENERGY
+        const energyConsumed = getPercent(char.energy, weapon.energyPerHit);
+        setPlayerEnergy(getPlayerEnergy - energyConsumed);
+    }
+
+    
+    // MONSTER DOES DAMAGE : monsterDamage - damage done by monster to player
+    const monsterDamage = random(monsters[getMonsters].maxDamage);
+    const monsterDamageInPercent = getPercent(char.health, monsterDamage);
+
+    setTimeout (() => {
+      setDisabled(false);  
+      setPlayerHealth(getPlayerHealth - monsterDamageInPercent);
+      if(getPlayerEnergy + char.stamina > 100) {
+        setPlayerEnergy(100);    
+      } else {
+        setPlayerEnergy(getPlayerEnergy + char.stamina);
+      }      
+    }, 1000);    
+  }
+
+  if(getMonsterHealth <= 0) {
+    setMonsterHealth(100);
+    setGameState(2);
+    const random = (num) => Math.round(Math.random()*num);
+    const itemsDropped = random(monsters[getMonsters].maxItemsDrop);
+
+    for (let i = 0; i < itemsDropped; i++) {
+      const item = dropItems[random(dropItems.length-1)];  
+      setDrop([...getDrop, item])  
+    }
+  }
 
   return (
     <div className="d-flex column">
       <h3 className="m0">ARENA Page</h3>
       <div className="d-flex row space-arnd">
-        <ArenaCard player={true} item={char}/>
+        {getGameState === 2 && <div className="grow1"><PlayerInventory /></div>}
+        {getGameState !== 2 && <ArenaCard player={true} 
+                                 item={char} 
+                                 gameState={getGameState} 
+                                 healthProgress={getPlayerHealth} 
+                                 energyProgress={getPlayerEnergy} 
+                               />}  
+                      
         <div className="d-flex column center">
-          <div className="btn">Attack</div>
-        </div>        
-        <ArenaCard player={false} item={monsters[getMonsters]} />
+          {getGameState === 0 && 
+            <div> 
+              <div className="btn" onClick={findEnemy} >Find Enemy</div>
+              <div className="btn mt10">Leave Arena</div>
+            </div>
+           }
+          {getGameState === 1 && <div className={getDisabled ? "btn disabled" : "btn"} onClick={attack}>Attack</div> }
+          {getGameState === 2 && <div className={getDisabled ? "btn disabled" : "btn"} onClick={()=> setGameState(0)}>Fight Again</div>}
+        </div>
+        
+        {getGameState === 2 && <div ClassName="grow1"> <DropItems drop={getDrop} removeItem={removeDropItem}/> </div>}
+        {getGameState !== 2 && <div> <ArenaCard player={false} 
+                                                item={monsters[getMonsters]} 
+                                                healthProgress={getMonsterHealth} 
+                                                energyProgress={100} 
+                                                gameState={getGameState} 
+                                     /> 
+                               </div>}
+                    
+        
       </div>
     </div>
   );

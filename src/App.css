@@ -74,7 +74,9 @@
 
 .slot4Weapon img {
   height: 100px;
+  max-height: 100px;
   width: 100px;  
+  max-width: 100px;
 }
 
 .shop-div {  border: 2px solid darkblue; }
@@ -119,17 +121,18 @@
 .arenaCard {
   display: flex;
   flex-direction: column;
-  padding: 10px;
+  padding: 5px;
   border: 1px solid darkblue;
   margin: 0 50px;
+  text-align: left;
 }
 
-.arenaCard > img {
+.arenaImg {
   width: 200px;
   max-width: 200px;
-  height: 300px;
-  max-height: 300px;
-  border: 1px solid;
+  height: 270px;
+  max-height: 270px;
+  border: 1px solid darkblue;
 }
 
 .wrapper {
@@ -151,6 +154,16 @@
   height: 100%;
 }
 
+/* does not allow for player to press "Attack" button until the monster strikes back */
+.disabled {  opacity: 0.5; }
+
+.dropItems {
+  width: 400px;
+  height: 150px;
+  border: 1px solid darkblue;
+  padding: 10px;
+  margin: 15px;
+}
 
 /* FLEX */
 .d-flex {display: flex;}
@@ -192,28 +205,28 @@
 .ml15 { margin-left: 15px;}
 .ml20 { margin-left: 20px;}
 .ml50 { margin-left: 50px;}
-.m10 {margin: 10px;}
-.m20 {margin: 20px;}
-.m30 {margin: 30px;}
+.m10 {  margin: 10px;}
+.m20 {  margin: 20px;}
+.m30 {  margin: 30px;}
 .mb3 {  margin-bottom: 3px;}
-.mb5 {margin-bottom: 10px;}
-.mb15 {margin-bottom: 15px;}
-.mb10 {margin-bottom: 10px;}
-.mb20 {margin-bottom: 20px;}
-.mb50 {margin-bottom: 50px;}
-.mr0 {margin-right: 0;}
-.mr5 {  margin-right: 5px;}
-.mr10 {margin-right: 10px;}
-.mr15 {margin-right: 15px;}
-.mr20 {margin-right: 20px;}
-.mr30 {margin-right: 30px;}
+.mb5 { margin-bottom: 10px;}
+.mb15 { margin-bottom: 15px;}
+.mb10 { margin-bottom: 10px;}
+.mb20 { margin-bottom: 20px;}
+.mb50 { margin-bottom: 50px;}
+.mr0 { margin-right: 0;}
+.mr5 { margin-right: 5px;}
+.mr10 { margin-right: 10px;}
+.mr15 { margin-right: 15px;}
+.mr20 { margin-right: 20px;}
+.mr30 { margin-right: 30px;}
 .mr50 { margin-right: 50px;}
 .mt5 {  margin-top: 5px;}
-.mt10 {margin-top: 10px;}
-.mt20 {margin-top: 20px;}
-.pl20 {padding-left: 20px;}
-.pt20 {padding-top: 20px;}
-.plr50 {padding: 0px 50px;}
+.mt10 { margin-top: 10px;}
+.mt20 { margin-top: 20px;}
+.pl20 { padding-left: 20px;}
+.pt20 { padding-top: 20px;}
+.plr50 {  padding: 0px 50px;}
 .fs12 {   font-size: 12px;}
 .fs14 {   font-size: 14px;}
 .fs16 {   font-size: 16px;}

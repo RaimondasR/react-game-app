@@ -30,7 +30,7 @@ const characters = [
   {
     image: "https://i.pinimg.com/originals/80/45/c3/8045c39d9427b3a842a63f88f7725c4a.png",
     race: "Superman",
-    damage: 10,
+    damage: 150,
     health: 10000,
     energy: 100,
     stamina: 3,
@@ -63,7 +63,7 @@ const characters = [
   {
     image: "https://www.pngarts.com/files/4/Terminator-Transparent-Background-PNG.png",
     race: "Terminator",
-    damage: 10,
+    damage: 60,
     health: 8000,
     energy: 100,
     stamina: 3,
@@ -74,7 +74,7 @@ const characters = [
   {
     image: "https://www.pngarts.com/files/4/Captain-Marvel-PNG-Photo.png",
     race: "Captain Marvel",
-    damage: 10,
+    damage: 100,
     health: 10000,
     energy: 100,
     stamina: 3,
@@ -103,17 +103,6 @@ const characters = [
     strength: 2,
     inventorySlots: 3,
     gold: 200
-  },
-  {
-    image: "https://media.gettyimages.com/photos/zydrunas-savickas-of-lithuania-competes-at-the-circus-medley-event-picture-id177573699?s=612x612",
-    race: "Žydrūnas S.",
-    damage: 10,
-    health: 6000,
-    energy: 100,
-    stamina: 3,
-    strength: 1,
-    inventorySlots: 2,
-    gold: 1000
   },
   {
     image: "https://images.blz-contentstack.com/v3/assets/blt3452e3b114fab0cd/blt9d279b401555fd09/6165efc047c23d6a01ffdf49/NF9Y4RYPBLZ91613677291342.png",

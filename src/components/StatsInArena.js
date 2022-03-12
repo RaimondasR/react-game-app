@@ -7,16 +7,16 @@ const StatsInArena = () => {
 
   return (
     <div>      
-      <h4>race : {char.race}</h4>
-      <div>damage : {char.damage}</div>
-      <div>health : {char.health}</div>
-      <div>energy : {char.energy}</div>
-      <div>stamina : {char.stamina}</div>
-      <div>strength : {char.strength}</div>
-      <div>inventory slots : {char.inventorySlots}</div>
-      <div className="mb5">gold : {char.gold}</div>
+      <h4>Player : { char.race }</h4>
+      <div>Damage : { char.damage }</div>
+      <div>Health : { char.health }</div>
+      <div>Energy : { char.energy }</div>
+      <div>Stamina : { char.stamina }</div>
+      <div>Strength : { char.strength }</div>
+      <div>Inventory slots : { char.inventorySlots }</div>
+      <div className="mb5">gold : { char.gold }</div>
       <div className="slot4Weapon">
-        {weapon && <img src={weapon.image} alt=""/>}
+        { weapon && <img src={ weapon.image } alt=""/> }
       </div>    
     </div>
   )
