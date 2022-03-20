@@ -300,320 +300,353 @@ const dropItems = [
       price: 20
   }
 ]
-
 const monsters = [
-  {
-      image: "https://static.wikia.nocookie.net/wowwiki/images/b/b1/Basilisk.png",
-      name: "Basilisk",
-      maxDamage: 5,
-      health: 100,
-      maxItemsDrop: 1
-  },
-  {
-      image: "https://static.wikia.nocookie.net/wowwiki/images/7/75/VampireBat.png",
-      name: "Bat",
-      maxDamage: 8,
-      health: 80,
-      maxItemsDrop: 1
-  },
-  {
-      image: "https://static.wikia.nocookie.net/wowwiki/images/a/a4/Bear.png",
-      name: "Bear",
-      maxDamage: 20,
-      health: 150,
-      maxItemsDrop: 3
-  },
-  {
-      image: "https://static.wikia.nocookie.net/wowwiki/images/6/60/Beetle.png",
-      name: "Beetle",
-      maxDamage: 3,
-      health: 300,
-      maxItemsDrop: 1
-  },
-  {
-      image: "https://static.wikia.nocookie.net/wowwiki/images/6/6f/Boar.png",
-      name: "Boar",
-      maxDamage: 7,
-      health: 85,
-      maxItemsDrop: 1
-  },
-  {
-      image: "https://static.wikia.nocookie.net/wowwiki/images/0/01/Vulture.png",
-      name: "Carrion bird",
-      maxDamage: 6,
-      health: 170,
-      maxItemsDrop: 1
-  },
-  {
-      image: "https://static.wikia.nocookie.net/wowwiki/images/3/36/Chimera.png",
-      name: "Chimaera",
-      maxDamage: 12,
-      health: 190,
-      maxItemsDrop: 2
-  },
-  {
-      image: "https://static.wikia.nocookie.net/wowwiki/images/3/33/Clefthoof.png",
-      name: "Clefthoof",
-      maxDamage: 50,
-      health: 500,
-      maxItemsDrop: 4
-  },
-  {
-      image: "https://static.wikia.nocookie.net/wowwiki/images/6/63/Crab.png",
-      name: "Crab",
-      maxDamage: 8,
-      health: 120,
-      maxItemsDrop: 3
-  },
-  {
-      image: "https://static.wikia.nocookie.net/wowwiki/images/4/46/Crocolisk.png",
-      name: "Crocolisk",
-      maxDamage: 38,
-      health: 420,
-      maxItemsDrop: 3
-  },
-  {
-      image: "https://static.wikia.nocookie.net/wowwiki/images/5/51/Devilsaur.png",
-      name: "Devilsaur",
-      maxDamage: 25,
-      health: 250,
-      maxItemsDrop: 3
-  },
-  {
-      image: "https://static.wikia.nocookie.net/wowwiki/images/6/6c/Diemetradon.png",
-      name: "Diemetradon",
-      maxDamage: 12,
-      health: 90,
-      maxItemsDrop: 2
+    {
+        image: "https://static.wikia.nocookie.net/wowwiki/images/b/b1/Basilisk.png",
+        name: "Basilisk",
+        maxDamage: 5,
+        health: 100,
+        maxItemsDrop: 1
+    },
+    {
+        image: "https://static.wikia.nocookie.net/wowwiki/images/7/75/VampireBat.png",
+        name: "Bat",
+        maxDamage: 8,
+        health: 80,
+        maxItemsDrop: 1
+    },
+    {
+        image: "https://static.wikia.nocookie.net/wowwiki/images/a/a4/Bear.png",
+        name: "Bear",
+        maxDamage: 20,
+        health: 150,
+        maxItemsDrop: 3
+    },
+    {
+        image: "https://static.wikia.nocookie.net/wowwiki/images/6/60/Beetle.png",
+        name: "Beetle",
+        maxDamage: 3,
+        health: 300,
+        maxItemsDrop: 1
+    },
+    {
+        image: "https://static.wikia.nocookie.net/wowwiki/images/6/6f/Boar.png",
+        name: "Boar",
+        maxDamage: 7,
+        health: 85,
+        maxItemsDrop: 1
+    },
+    {
+        image: "https://www.downloadclipart.net/large/alien-png-transparent-image.png",
+        name: "Alien",
+        maxDamage: 130,
+        health: 4000,
+        maxItemsDrop: 10
+    },
+    {
+        image: "https://static.wikia.nocookie.net/wowwiki/images/0/01/Vulture.png",
+        name: "Carrion bird",
+        maxDamage: 6,
+        health: 170,
+        maxItemsDrop: 1
+    },
+    {
+        image: "https://static.wikia.nocookie.net/wowwiki/images/3/36/Chimera.png",
+        name: "Chimaera",
+        maxDamage: 12,
+        health: 190,
+        maxItemsDrop: 2
+    },
+    {
+        image: "https://static.wikia.nocookie.net/wowwiki/images/3/33/Clefthoof.png",
+        name: "Clefthoof",
+        maxDamage: 50,
+        health: 500,
+        maxItemsDrop: 4
+    },
+    {
+        image: "https://static.wikia.nocookie.net/wowwiki/images/6/63/Crab.png",
+        name: "Crab",
+        maxDamage: 8,
+        health: 120,
+        maxItemsDrop: 3
+    },
+    {
+        image: "https://static.wikia.nocookie.net/wowwiki/images/4/46/Crocolisk.png",
+        name: "Crocolisk",
+        maxDamage: 38,
+        health: 420,
+        maxItemsDrop: 3
+    },
+    {
+        image: "https://static.wikia.nocookie.net/wowwiki/images/5/51/Devilsaur.png",
+        name: "Devilsaur",
+        maxDamage: 25,
+        health: 250,
+        maxItemsDrop: 3
+    },
+    {
+        image: "https://static.wikia.nocookie.net/wowwiki/images/6/6c/Diemetradon.png",
+        name: "Diemetradon",
+        maxDamage: 12,
+        health: 90,
+        maxItemsDrop: 2
 
-  },
-  {
-      image: "https://static.wikia.nocookie.net/wowwiki/images/3/34/Dragonhawk1.png",
-      name: "Dragonhawk",
-      maxDamage: 120,
-      health: 20,
-      maxItemsDrop: 5
-  },
-  {
-      image: "https://static.wikia.nocookie.net/wowwiki/images/0/03/Elekk.png",
-      name: "Elekk",
-      maxDamage: 34,
-      health: 160,
-      maxItemsDrop: 4
+    },
+    {
+        image: "https://static.wikia.nocookie.net/wowwiki/images/3/34/Dragonhawk1.png",
+        name: "Dragonhawk",
+        maxDamage: 120,
+        health: 20,
+        maxItemsDrop: 5
+    },
+    {
+        image: "https://static.wikia.nocookie.net/wowwiki/images/0/03/Elekk.png",
+        name: "Elekk",
+        maxDamage: 34,
+        health: 160,
+        maxItemsDrop: 4
 
-  },
-  {
-      image: "https://static.wikia.nocookie.net/wowwiki/images/7/73/Fox.png",
-      name: "Fox",
-      maxDamage: 5,
-      health: 50,
-      maxItemsDrop: 2
+    },
+    {
+        image: "https://static.wikia.nocookie.net/wowwiki/images/7/73/Fox.png",
+        name: "Fox",
+        maxDamage: 5,
+        health: 50,
+        maxItemsDrop: 2
 
-  },
-  {
-      image: "https://static.wikia.nocookie.net/wowwiki/images/2/2f/Gryphon.png",
-      name: "Gryphon",
-      maxDamage: 18,
-      health: 350,
-      maxItemsDrop: 2
+    },
+    {
+        image: "https://static.wikia.nocookie.net/wowwiki/images/2/2f/Gryphon.png",
+        name: "Gryphon",
+        maxDamage: 18,
+        health: 350,
+        maxItemsDrop: 2
 
-  },
-  {
-      image: "https://static.wikia.nocookie.net/wowwiki/images/8/84/Gorilla.png",
-      name: "Gorilla",
-      maxDamage: 30,
-      health: 240,
-      maxItemsDrop: 3
+    },
+    {
+        image: "https://www.pngkey.com/png/full/12-125414_jason-voorhees-freddy-vs-jason-jason-voorhees-no.png",
+        name: "Jason",
+        maxDamage: 50,
+        health: 1000,
+        maxItemsDrop: 7
 
-  },
-  {
-      image: "https://static.wikia.nocookie.net/wowwiki/images/c/c3/Horse.png",
-      name: "Horse",
-      maxDamage: 3,
-      health: 150,
-      maxItemsDrop: 1
+    },
+    {
+        image: "https://static.wikia.nocookie.net/wowwiki/images/8/84/Gorilla.png",
+        name: "Gorilla",
+        maxDamage: 30,
+        health: 240,
+        maxItemsDrop: 3
 
-  },
-  {
-      image: "https://static.wikia.nocookie.net/wowwiki/images/9/9d/Hydra.png",
-      name: "Hydra",
-      maxDamage: 40,
-      health: 500,
-      maxItemsDrop: 5
-  },
-  {
-      image: "https://static.wikia.nocookie.net/wowwiki/images/e/ee/HyenaBlue.png",
-      name: "Hyena",
-      maxDamage: 9,
-      health: 120,
-      maxItemsDrop: 2
+    },
+    {
+        image: "https://static.wikia.nocookie.net/wowwiki/images/c/c3/Horse.png",
+        name: "Horse",
+        maxDamage: 3,
+        health: 150,
+        maxItemsDrop: 1
 
-  },
-  {
-      image: "https://static.wikia.nocookie.net/wowwiki/images/e/e5/Cat_lion.png",
-      name: "Lion",
-      maxDamage: 13,
-      health: 200,
-      maxItemsDrop: 2
+    },
+    {
+        image: "https://static.wikia.nocookie.net/wowwiki/images/9/9d/Hydra.png",
+        name: "Hydra",
+        maxDamage: 40,
+        health: 500,
+        maxItemsDrop: 5
+    },
+    {
+        image: "https://static.wikia.nocookie.net/wowwiki/images/e/ee/HyenaBlue.png",
+        name: "Hyena",
+        maxDamage: 9,
+        health: 120,
+        maxItemsDrop: 2
 
-  },
-  {
-      image: "https://static.wikia.nocookie.net/wowwiki/images/b/b8/Lynx.png",
-      name: "Lynx",
-      maxDamage: 12,
-      health: 150,
-      maxItemsDrop: 1
+    },
+    {
+        image: "https://static.wikia.nocookie.net/wowwiki/images/e/e5/Cat_lion.png",
+        name: "Lion",
+        maxDamage: 13,
+        health: 200,
+        maxItemsDrop: 2
 
-  },
-  {
-      image: "https://static.wikia.nocookie.net/wowwiki/images/9/9c/Mastiff.png",
-      name: "Mastiff",
-      maxDamage: 7,
-      health: 80,
-      maxItemsDrop: 1
+    },
+    {
+        image: "https://static.wikia.nocookie.net/wowwiki/images/b/b8/Lynx.png",
+        name: "Lynx",
+        maxDamage: 12,
+        health: 150,
+        maxItemsDrop: 1
 
-  },
-  {
-      image: "https://static.wikia.nocookie.net/wowwiki/images/2/27/Monkey.png",
-      name: "Monkey",
-      maxDamage: 4,
-      health: 300,
-      maxItemsDrop: 1
+    },
+    {
+        image: "https://static.wikia.nocookie.net/wowwiki/images/9/9c/Mastiff.png",
+        name: "Mastiff",
+        maxDamage: 7,
+        health: 80,
+        maxItemsDrop: 1
 
-  },
-  {
-      image: "https://static.wikia.nocookie.net/wowwiki/images/0/08/Netherray.png",
-      name: "Nether ray",
-      maxDamage: 6,
-      health: 120,
-      maxItemsDrop: 1
+    },
+    {
+        image: "https://static.wikia.nocookie.net/wowwiki/images/2/27/Monkey.png",
+        name: "Monkey",
+        maxDamage: 4,
+        health: 300,
+        maxItemsDrop: 1
 
-  },
-  {
-      image: "https://static.wikia.nocookie.net/wowwiki/images/b/be/OwlWhite.png",
-      name: "Owl",
-      maxDamage: 7,
-      health: 70,
-      maxItemsDrop: 2
+    },
+    {
+        image: "https://static.wikia.nocookie.net/wowwiki/images/0/08/Netherray.png",
+        name: "Nether ray",
+        maxDamage: 6,
+        health: 120,
+        maxItemsDrop: 1
 
-  },
-  {
-      image: "https://static.wikia.nocookie.net/wowwiki/images/3/36/Panther.png",
-      name: "Panther",
-      maxDamage: 19,
-      health: 40,
-      maxItemsDrop: 3
+    },
+    {
+        image: "https://static.wikia.nocookie.net/wowwiki/images/b/be/OwlWhite.png",
+        name: "Owl",
+        maxDamage: 7,
+        health: 70,
+        maxItemsDrop: 2
 
-  },
-  {
-      image: "https://static.wikia.nocookie.net/wowwiki/images/1/16/Parrot.png",
-      name: "Parrot",
-      maxDamage: 2,
-      health: 30,
-      maxItemsDrop: 1
+    },
+    {
+        image: "https://static.wikia.nocookie.net/wowwiki/images/3/36/Panther.png",
+        name: "Panther",
+        maxDamage: 19,
+        health: 40,
+        maxItemsDrop: 3
 
-  },
-  {
-      image: "https://static.wikia.nocookie.net/wowwiki/images/6/66/Raven.png",
-      name: "Raven",
-      maxDamage: 8,
-      health: 150,
-      maxItemsDrop: 1
+    },
+    {
+        image: "https://www.pngkey.com/png/full/180-1809288_mortal-kombat-x-predator-png.png",
+        name: "Predator",
+        maxDamage: 120,
+        health: 3000,
+        maxItemsDrop: 10
 
-  },
-  {
-      image: "https://static.wikia.nocookie.net/wowwiki/images/c/c2/Rhino.png",
-      name: "Rhinoceros",
-      maxDamage: 120,
-      health: 1500,
-      maxItemsDrop: 8
-  },
-  {
-      image: "https://static.wikia.nocookie.net/wowwiki/images/a/ab/Scorpion.png",
-      name: "Scorpid",
-      maxDamage: 25,
-      health: 300,
-      maxItemsDrop: 3
+    },
+    {
+        image: "https://static.wikia.nocookie.net/wowwiki/images/1/16/Parrot.png",
+        name: "Parrot",
+        maxDamage: 2,
+        health: 30,
+        maxItemsDrop: 1
 
-  },
-  {
-      image: "https://static.wikia.nocookie.net/wowwiki/images/1/1a/Sea_Snake.png",
-      name: "Sea snake",
-      maxDamage: 5,
-      health: 50,
-      maxItemsDrop: 1
+    },
+    {
+        image: "https://static.wikia.nocookie.net/wowwiki/images/6/66/Raven.png",
+        name: "Raven",
+        maxDamage: 8,
+        health: 150,
+        maxItemsDrop: 1
 
-  },
-  {
-      image: "https://static.wikia.nocookie.net/wowwiki/images/8/89/Serpent.png",
-      name: "Serpent",
-      maxDamage: 12,
-      health: 80,
-      maxItemsDrop: 1
+    },
+    {
+        image: "https://static.wikia.nocookie.net/wowwiki/images/c/c2/Rhino.png",
+        name: "Rhinoceros",
+        maxDamage: 120,
+        health: 1500,
+        maxItemsDrop: 8
+    },
+    {
+        image: "https://static.wikia.nocookie.net/wowwiki/images/a/ab/Scorpion.png",
+        name: "Scorpid",
+        maxDamage: 25,
+        health: 300,
+        maxItemsDrop: 3
 
-  },
-  {
-      image: "https://static.wikia.nocookie.net/wowwiki/images/1/14/Shark.png",
-      name: "Shark",
-      maxDamage: 15,
-      health: 210,
-      maxItemsDrop: 2
+    },
+    {
+        image: "https://static.wikia.nocookie.net/wowwiki/images/1/1a/Sea_Snake.png",
+        name: "Sea snake",
+        maxDamage: 5,
+        health: 50,
+        maxItemsDrop: 1
 
-  },
-  {
-      image: "https://static.wikia.nocookie.net/wowwiki/images/5/51/Sporebat.png",
-      name: "Spore bat",
-      maxDamage: 9,
-      health: 150
-  },
-  {
-      image: "https://static.wikia.nocookie.net/wowwiki/images/1/10/Stag.png",
-      name: "Stag",
-      maxDamage: 4,
-      health: 200,
-      maxItemsDrop: 2
+    },
+    {
+        image: "https://static.wikia.nocookie.net/wowwiki/images/8/89/Serpent.png",
+        name: "Serpent",
+        maxDamage: 12,
+        health: 80,
+        maxItemsDrop: 1
 
-  },
-  {
-      image: "https://static.wikia.nocookie.net/wowwiki/images/1/12/Strider.png",
-      name: "Tallstrider",
-      maxDamage: 20,
-      health: 80
-  },
-  {
-      image: "https://static.wikia.nocookie.net/wowwiki/images/3/3c/Threshadon.png",
-      name: "Threshadon",
-      maxDamage: 70,
-      health: 800,
-      maxItemsDrop: 3
+    },
+    {
+        image: "https://static.wikia.nocookie.net/wowwiki/images/1/14/Shark.png",
+        name: "Shark",
+        maxDamage: 15,
+        health: 210,
+        maxItemsDrop: 2
 
-  },
-  {
-      image: "https://static.wikia.nocookie.net/wowwiki/images/e/e9/Turtle.png",
-      name: "Turtle",
-      maxDamage: 5,
-      health: 5000,
-      maxItemsDrop: 10
-  }
+    },
+    {
+        image: "https://static.wikia.nocookie.net/wowwiki/images/5/51/Sporebat.png",
+        name: "Spore bat",
+        maxDamage: 9,
+        health: 150
+    },
+    {
+        image: "https://static.wikia.nocookie.net/wowwiki/images/1/10/Stag.png",
+        name: "Stag",
+        maxDamage: 4,
+        health: 200,
+        maxItemsDrop: 2
+
+    },
+    {
+        image: "https://static.wikia.nocookie.net/wowwiki/images/1/12/Strider.png",
+        name: "Tallstrider",
+        maxDamage: 20,
+        health: 80
+    },
+    {
+        image: "https://static.wikia.nocookie.net/wowwiki/images/3/3c/Threshadon.png",
+        name: "Threshadon",
+        maxDamage: 70,
+        health: 800,
+        maxItemsDrop: 3
+
+    },
+    {
+        image: "https://static.wikia.nocookie.net/wowwiki/images/e/e9/Turtle.png",
+        name: "Turtle",
+        maxDamage: 5,
+        health: 5000,
+        maxItemsDrop: 10
+    },
+    {
+        image: "https://www.pngkit.com/png/full/11-110326_freddy-krueger-sixth-scale-figure-freddy-krueger-png.png",
+        name: "Freddy Krueger",
+        maxDamage: 100,
+        health: 2000,
+        maxItemsDrop: 10
+    }
 ]
 
 const ArenaPage = () => {
-  const [getMonsters, setMonsters] = useState(15);
-  const [getGameState, setGameState] = useState(0);
-//   const playerHP = useSelector((state)=> state.character.value.health);
-  const [getPlayerHealth, setPlayerHealth] = useState(1000); // change to take character original health value // weapon = useSelector((state) => state.character.value.weapon);  
-  const [getMonsterHealth, setMonsterHealth] = useState(50);
-  const [getPlayerEnergy, setPlayerEnergy] = useState(100);
-  const [getDisabled, setDisabled] = useState(false);
-  const [getDrop, setDrop] = useState([]);
-
   const char = useSelector((state) => state.character.value.character);
   const weapon = useSelector((state) => state.character.value.weapon);
+  let randomMonsterIndex = 15;
+  let [getMonsters, setMonsters] = useState(randomMonsterIndex);
+  let [getGameState, setGameState] = useState(0);
+  let [getPlayerHealth, setPlayerHealth] = useState(char.health);
+  let [getMonsterHealth, setMonsterHealth] = useState(monsters[randomMonsterIndex].health);
+  let [getPlayerEnergy, setPlayerEnergy] = useState(100);
+  let [getDisabled, setDisabled] = useState(false);
+  let [getDrop, setDrop] = useState([]);
 
   function findEnemy() {
     setGameState(1);
-    const randomMonsterIndex = Math.floor(Math.random()*monsters.length);
+    randomMonsterIndex = Math.floor(Math.random()*monsters.length);
+    getMonsters = randomMonsterIndex;
     setMonsters(randomMonsterIndex);
+    setMonsterHealth(monsters[randomMonsterIndex].health);
+    getMonsterHealth = monsters[randomMonsterIndex].health;
+    // console.log('Initial player getPlayerHealth=',getPlayerHealth);
+    // console.log('Initial monster getMonsterHealth=',getMonsterHealth);
   }
 
   function removeDropItem(index) {
@@ -626,30 +659,29 @@ const ArenaPage = () => {
     const getPercent = (defaultValue, currentDamage) => {
         const onePercent = defaultValue / 100;
         return (currentDamage / onePercent).toFixed(0);  
-      }
+    }
 
     // if player has more energy than weapon's energy per hit, then player attacks
     if(getPlayerEnergy >= weapon.energyPerHit) {
-        setDisabled(true);
+      setDisabled(true);
                 
-        // PLAYER DOES DAMAGE : playerDamage - damage done by player to monster
-        const playerDamage = random(weapon.maxDamage) + char.damage;
-        // we send parameters how many health has a monster and damage done by player
-        const playerDamageInPercent = getPercent(monsters[getMonsters].health, playerDamage);
-    
-        if(char.strength >= random(100)) {
+      // PLAYER DOES DAMAGE : playerDamage - damage done by player to monster
+      const playerDamage = random(weapon.maxDamage) + char.damage;
+      // we send parameters how many health has a monster and damage done by player
+      const playerDamageInPercent = getPercent(monsters[getMonsters].health, playerDamage);
+
+      if(char.strength >= random(100)) {
             // critical hit
             console.log("CRITICAL", playerDamageInPercent*3)
             setMonsterHealth(getMonsterHealth - playerDamageInPercent*3);    
-        } else {
+      } else {
             setMonsterHealth(getMonsterHealth - playerDamageInPercent);
-        }
+      }
         
-        // SUBTRACT ENERGY
-        const energyConsumed = getPercent(char.energy, weapon.energyPerHit);
-        setPlayerEnergy(getPlayerEnergy - energyConsumed);
+      // SUBTRACT ENERGY
+      const energyConsumed = getPercent(char.energy, weapon.energyPerHit);
+      setPlayerEnergy(getPlayerEnergy - energyConsumed);
     }
-
     
     // MONSTER DOES DAMAGE : monsterDamage - damage done by monster to player
     const monsterDamage = random(monsters[getMonsters].maxDamage);
@@ -664,7 +696,9 @@ const ArenaPage = () => {
         setPlayerEnergy(getPlayerEnergy + char.stamina);
       }      
     }, 1000);    
-  }
+    // console.log('Current player getPlayerHealth=',getPlayerHealth);
+    // console.log('Current monster getMonsterHealth=',getMonsterHealth);
+  } // end of function attack()
 
   if(getMonsterHealth <= 0) {
     setMonsterHealth(100);
@@ -701,7 +735,7 @@ const ArenaPage = () => {
           {getGameState === 2 && <div className={getDisabled ? "btn disabled" : "btn"} onClick={()=> setGameState(0)}>Fight Again</div>}
         </div>
         
-        {getGameState === 2 && <div ClassName="grow1"> <DropItems drop={getDrop} removeItem={removeDropItem}/> </div>}
+        {getGameState === 2 && <div className="grow1"> <DropItems drop={getDrop} removeItem={removeDropItem}/> </div>}
         {getGameState !== 2 && <div> <ArenaCard player={false} 
                                                 item={monsters[getMonsters]} 
                                                 healthProgress={getMonsterHealth} 

@@ -1,4 +1,4 @@
-/// React framework coding Assignment: react-game-app
+/// React framework coding assignment task: react-game-app
 
 // Instructions
 // limited inventory size
@@ -12,7 +12,7 @@
 // you should have at least 4 pages
 // start game page - page where player choose his character
 // main page - where payer info is shown, his gold, stats, inventory, equipment
-// trader page - page where player can buy and sell stuff
+// trader(shop) page - page where player can buy and sell stuff
 // arena - page where player fight monsters
 
 // START GAME PAGE
@@ -22,7 +22,7 @@
 // MAIN PAGE
 // in this page player can select what weapon to equip
 
-// TRADER PAGE
+// TRADER(SHOP) PAGE
 // Trader sells weapons and potions
 // trader sell weapons and potions, also trader will buy items from player for gold (item monsters drop).
 // trader buys items for half the price if player want to sell for weapon he bought of potion
@@ -48,7 +48,7 @@
 
 // WHAT STATS DO
 // health - if health gets to 0 player dies, game over, health is decreasing when player takes damage from enemy
-// energy - every weapon takes particular amount of energy, to make a hit to enemy, if energy os lower than weapon requires, you can not hit enemy
+// energy - every weapon takes particular amount of energy, to make a hit to enemy, if energy is lower than weapon requires, you can not hit enemy
 // stamina - stamina points is added to energy after every enemy hit, for example: your stamina 5, after enemy made a move you get 5 points to energy stat
 // strength - determines chance of critical hit, if your strength is 5, you have 5% chance to maka a critical hit which does 3x regular damage
 // inventory slots - determines how many items player could carry have in his inventory

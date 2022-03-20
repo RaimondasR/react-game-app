@@ -430,10 +430,7 @@ export const characterSlice = createSlice ({
       value: {
         character: null,
         weapon: null,
-        inventory: [{
-          image: "https://wow.gamepressure.com/gfx/icons/INV_Chest_Leather_09.gif",
-          price: 245,
-      }]
+        inventory: []
       },
     },
     reducers: {

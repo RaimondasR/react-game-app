@@ -694,12 +694,28 @@ const trader = {
             price: 400
         },
         {
+            image: "https://freepikpsd.com/file/2019/10/red-bull-can-transparent-1-Transparent-Images.png",
+            title: "Health + 50",
+            effect: {
+                health: 50
+            },
+            price: 100
+        },
+        {
             image: "https://wow.gamepressure.com/gfx/icons/INV_Potion_21.gif",
             title: "Health + 30",
             effect: {
                 health: 30
             },
             price: 600
+        },
+        {
+            image: "https://us.coca-cola.com/store/media/catalog/product/1/6/16334.png?quality=80&fit=bounds&height=750&width=700&canvas=700:750",
+            title: "Health + 60",
+            effect: {
+                health: 60
+            },
+            price: 500
         },
         {
             image: "https://wow.gamepressure.com/gfx/icons/INV_Potion_21.gif",

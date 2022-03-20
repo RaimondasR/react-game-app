@@ -128,6 +128,14 @@ export const monstersSlice = createSlice ({
     
         },
         {
+            image: "https://www.pngkey.com/png/full/12-125414_jason-voorhees-freddy-vs-jason-jason-voorhees-no.png",
+            name: "Jason",
+            maxDamage: 50,
+            health: 1000,
+            maxItemsDrop: 7
+    
+        },
+        {
             image: "https://static.wikia.nocookie.net/wowwiki/images/8/84/Gorilla.png",
             name: "Gorilla",
             maxDamage: 30,
@@ -212,6 +220,14 @@ export const monstersSlice = createSlice ({
             maxDamage: 19,
             health: 40,
             maxItemsDrop: 3
+    
+        },
+        {
+            image: "https://www.pngkey.com/png/full/180-1809288_mortal-kombat-x-predator-png.png",
+            name: "Predator",
+            maxDamage: 120,
+            health: 3000,
+            maxItemsDrop: 10
     
         },
         {
@@ -302,6 +318,13 @@ export const monstersSlice = createSlice ({
             name: "Turtle",
             maxDamage: 5,
             health: 5000,
+            maxItemsDrop: 10
+        },
+        {
+            image: "https://www.pngkit.com/png/full/11-110326_freddy-krueger-sixth-scale-figure-freddy-krueger-png.png",
+            name: "Freddy Krueger",
+            maxDamage: 100,
+            health: 2000,
             maxItemsDrop: 10
         }
     ],

@@ -94,6 +94,17 @@ const characters = [
     gold: 50
   },
   {
+    image: "https://www.pngkey.com/png/full/305-3058850_christian-bale-png-transparent-image-batman-dark-knight.png",
+    race: "Batman",
+    damage: 100,
+    health: 7000,
+    energy: 90,
+    stamina: 5,
+    strength: 2,
+    inventorySlots: 5,
+    gold: 50000
+  },
+  {
     image: "https://images.blz-contentstack.com/v3/assets/blt3452e3b114fab0cd/blte86b6ed1f29656b9/6165e7dedfd0436b6dcf6e2e/YAAFZMAKCVPG1613677288954.png",
     race: "Goblin",
     damage: 5,
@@ -129,7 +140,7 @@ const characters = [
   {
     image: "https://pngimg.com/uploads/chuck_norris/chuck_norris_PNG14.png",
     race: "Chuck Norris",
-    damage: 10,
+    damage: 50,
     health: 5000,
     energy: 100,
     stamina: 3,

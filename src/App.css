@@ -46,9 +46,9 @@
 }
 
 .playerInfo img {
-  width: 200px;
-  height: 280px;
-  border: 2px solid darkblue;
+  width: 180px;  /* old: 200px */
+  height: 260px; /* old: 280px */
+  border: 1px solid darkblue;
 }
 
 .playerInfo h3, h4 {    margin: 0;}
