@@ -82,11 +82,13 @@
 .shop-div {  border: 2px solid darkblue; }
 
 .btn {
-  padding: 5px;
-  height: 25px;  
+  padding: 25px;
   background-color: black;
   color: white;
+  display: flex;
   text-align: center;
+  align-items: center;
+  border-radius: 5px;
 }
 
 .btn:hover {
@@ -132,7 +134,6 @@
   max-width: 200px;
   height: 270px;
   max-height: 270px;
-  border: 1px solid darkblue;
 }
 
 .wrapper {
