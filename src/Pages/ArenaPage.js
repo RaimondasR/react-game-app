@@ -5,7 +5,7 @@ import DropItems from '../components/DropItems';
 import PlayerInventory from '../components/PlayerInventory';
 import { useSelector } from 'react-redux';
 
-const dropItems = [
+cdconst dropItems = [
   {
       image: "https://wow.gamepressure.com/gfx/icons/INV_Chest_Leather_09.gif",
       price: 245,
@@ -717,11 +717,11 @@ const ArenaPage = () => {
       <h3 className="m0">ARENA Page</h3>
       <div className="d-flex row space-arnd">
         {getGameState === 2 && <div className="grow1"><PlayerInventory /></div>}
-        {getGameState !== 2 && <ArenaCard player={true} 
-                                 item={char} 
-                                 gameState={getGameState} 
-                                 healthProgress={getPlayerHealth} 
-                                 energyProgress={getPlayerEnergy} 
+        {getGameState !== 2 && <ArenaCard player={true}
+                                          item={char}
+                                          gameState={getGameState}
+                                          healthProgress={getPlayerHealth}
+                                          energyProgress={getPlayerEnergy}
                                />}  
                       
         <div className="d-flex column center">
